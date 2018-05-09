@@ -14,3 +14,9 @@ https://code.msdn.microsoft.com/windowsdesktop/C-Sample-to-list-all-the-4817b58f
 How To: Simplify the Use of Threads in WPF（如何更简单地使用现场在WPF中）
 https://www.codeproject.com/Articles/756665/How-To-Simplify-the-Use-of-Threads-in-WPF
 ----------------------------------------------------
+MathConverter: How to Do Math in XAML（数据绑定中进行数学运算）
+https://www.ikriv.com/dev/wpf/MathConverter/index
+----------------------------------------------------
+Baktun Shell: Hosting WPF Child Windows in Another Process（将用户控件放到Baktun Shell中允许，相当于插件集合）
+https://www.ikriv.com/dev/wpf/BaktunShell/
+----------------------------------------------------
