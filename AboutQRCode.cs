@@ -31,12 +31,11 @@
                     minY += -margin;
                     maxY += margin;
 
-                    // Simple GDI+ rectangle drawing
-                    using (var pen = new System.Drawing.Pen(ColorTranslator.FromHtml("#FF0000"), 4F))
+                    // 使用GDI+进行矩形绘制
+                    using (var pen = new Pen(ColorTranslator.FromHtml("#F7190B"), 4F))
                     {
                         using (var g = Graphics.FromHdc(GetWindowDC(IntPtr.Zero)))
-                            g.DrawRectangle(pen, (float) minX, (float) minY, (float) (maxX - minX),
-                                                       (float) (maxY - minY));
+                            g.DrawRectangle(pen, (float) minX, (float) minY, (float) (maxX - minX), (float) (maxY - minY));
                     }
                 }
             }
