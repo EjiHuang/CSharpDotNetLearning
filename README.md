@@ -20,6 +20,7 @@ https://www.ikriv.com/dev/wpf/MathConverter/index
 Baktun Shell: Hosting WPF Child Windows in Another Process（将用户控件放到Baktun Shell中允许，相当于插件集合）
 https://www.ikriv.com/dev/wpf/BaktunShell/
 ----------------------------------------------------
-驱动级按键模拟与拦截
-http://www.oblita.com/interception
+驱动级按键模拟与拦截  
+http://www.oblita.com/interception  
+实例参考：https://github.com/JerryAJ/JX3Assist  
 ----------------------------------------------------
