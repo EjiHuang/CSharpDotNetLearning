@@ -24,3 +24,6 @@ https://www.ikriv.com/dev/wpf/BaktunShell/
 http://www.oblita.com/interception  
 实例参考：https://github.com/JerryAJ/JX3Assist  
 ----------------------------------------------------
+Simpler WPF Binding  
+http://www.simplygoodcode.com/2012/08/simpler-wpf-binding/index.html  
+----------------------------------------------------
