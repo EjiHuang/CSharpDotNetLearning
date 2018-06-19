@@ -30,3 +30,6 @@ http://www.simplygoodcode.com/2012/08/simpler-wpf-binding/index.html
 WPF 中使用附加属性，将任意 UI 元素或控件裁剪成圆形（椭圆）  
 https://walterlv.github.io/post/clip-wpf-uielement-to-ellipse.html  
 ----------------------------------------------------
+What is the correct way to create a single-instance application?  
+https://stackoverflow.com/questions/19147/what-is-the-correct-way-to-create-a-single-instance-application?noredirect=1&lq=1  
+----------------------------------------------------
