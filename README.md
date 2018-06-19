@@ -27,3 +27,6 @@ http://www.oblita.com/interception
 Simpler WPF Binding  
 http://www.simplygoodcode.com/2012/08/simpler-wpf-binding/index.html  
 ----------------------------------------------------
+WPF 中使用附加属性，将任意 UI 元素或控件裁剪成圆形（椭圆）  
+https://walterlv.github.io/post/clip-wpf-uielement-to-ellipse.html  
+----------------------------------------------------
