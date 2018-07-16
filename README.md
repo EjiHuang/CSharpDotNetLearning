@@ -33,3 +33,6 @@ https://walterlv.github.io/post/clip-wpf-uielement-to-ellipse.html
 What is the correct way to create a single-instance application?  
 https://stackoverflow.com/questions/19147/what-is-the-correct-way-to-create-a-single-instance-application?noredirect=1&lq=1  
 ----------------------------------------------------
+非常棒的放大缩小控件的容器  
+https://github.com/wieslawsoltes/PanAndZoom  
+----------------------------------------------------
