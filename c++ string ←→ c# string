@@ -1,0 +1,46 @@
+c#：
+    [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+    public struct PROCESSINFO           // 进程信息
+    {
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 60)]
+        public byte[] ImageFileName;    // 进程名
+        [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 512)]
+        public string Path;             // 进程路径
+    }
+
+c++：
+    struct PROCESSINFO
+    {
+        CHAR    ImageFileName[60];  // 进程名
+        WCHAR   Path[512];		    // 进程路径
+    };
+
+use in c#:
+    void GetProcessInfo(ref PROCESSINFO processInfo);
+        PROCESSINFO info = new PROCESSINFO();
+        GetProcessInfo(ref info);
+
+use in c++:
+    void GetProcessInfo(PROCESSINFO& info);
+
+单字符串返回，不使用结构体方式
+c#：
+    [DllImport("BestFitMappingNative", BestFitMapping = true, CallingConvention = CallingConvention.Cdecl)]
+    [return: MarshalAs(UnmanagedType.LPStr)]
+    public static extern string CLPStr_In([In, MarshalAs(UnmanagedType.LPStr)]string str);
+
+c++：
+    extern "C" DLL_EXPORT LPSTR _cdecl CLPStr_In(LPSTR pStr)
+    {
+        // alloc,copy, since we cannot depend the Marshaler's activity.
+        size_t len = strlen(pStr) + 1; // +1, Include the NULL Character.
+        LPSTR pBack = (LPSTR)CoTaskMemAlloc(sizeof(char) * len);
+        strncpy(pBack, pStr, len);
+
+        return pBack;
+    }
+
+use in c#:
+    StringBuilder sb = GetInvalidString();
+    string str = sb.ToString();
+    string rstr = CLPStr_In(str);
